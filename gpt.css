@@ -32,7 +32,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.04em;
   margin-bottom: 45px;
-  color: #363B2E;
+  color: #40234C;
   opacity: 0.99;
   text-align: center;
 }
@@ -392,3 +392,4 @@ body {
   text-overflow: ellipsis;
   /* добавляет "..." если текст не помещается */
 }
+
