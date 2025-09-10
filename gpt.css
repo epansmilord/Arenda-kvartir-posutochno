@@ -1,5 +1,5 @@
 body {
-  background-color: #fefefe;
+  background-color: #F4F4F4;
   margin: 0;
 }
 
@@ -32,9 +32,27 @@ body {
   font-weight: 800;
   letter-spacing: 0.04em;
   margin-bottom: 45px;
-  color: #40234C;
+  color: #FFF8F1;
   opacity: 0.99;
   text-align: center;
+
+}
+
+.title {
+
+  padding: 40px 20px;
+  /* отступы, чтобы текст не прилипал */
+
+  background-image: url("image 2.jpg");
+  /* твоя картинка */
+  background-size: cover;
+  /* растягиваем на весь блок */
+  background-position: center;
+  /* по центру */
+  background-repeat: no-repeat;
+  /* не повторяется */
+
+
 }
 
 .apartments p {
@@ -392,4 +410,3 @@ body {
   text-overflow: ellipsis;
   /* добавляет "..." если текст не помещается */
 }
-
