@@ -17,19 +17,19 @@ body {
   padding: 10px 10px 0px 10px;
   font-family: open sans, sans-serif;
   font-family: "open sans";
-  font-size: 11px;
+  font-size: 5px;
   line-height: 2;
   font-weight: 400;
   letter-spacing: 0.01em;
-  background-color: #37451F;
-  color: #F5F9ED;
+  background-color: #f5f5f5;
+  color: #262626;
 }
 
 .apartments h1 {
-  font-family: "Roboto";
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: 700;
+  font-family: "Merriweather";
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 800;
   letter-spacing: 0.04em;
   margin-bottom: 45px;
   color: #363B2E;
@@ -39,7 +39,7 @@ body {
 
 .apartments p {
   font-family: "open sans";
-  font-size: 18px;
+  font-size: 20px;
 
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -75,10 +75,10 @@ body {
 /*шрифт внутри карточки*/
   {
   font-family: "open sans";
-  font-size: 16px;
+  font-size: 19px;
   line-height: 26px;
-  font-weight: 550;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   list-style: none;
   padding: 13px;
   margin: 5px;
@@ -87,6 +87,14 @@ body {
   display: flex;
   flex-direction: column;
 
+}
+
+.special-word {
+  font-family: "open sans";
+  font-size: 19px;
+
+  font-weight: 750;
+  letter-spacing: 0.03em;
 }
 
 .details li {
@@ -224,10 +232,10 @@ body {
 .podrobnee {
   /* твоя кнопка */
   font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 550;
+  font-size: 19px;
+  font-weight: 650;
   padding: 10px 20px;
-  background-color: #7FA046;
+  background-color: #A584D3;
   color: #f9f6f6;
   border: none;
   border-radius: 5px;
@@ -242,13 +250,7 @@ body {
   color: #6E8A3C;
 }
 
-.special-word {
-  font-family: "open sans";
-  font-size: 15px;
 
-  font-weight: 700;
-  letter-spacing: 0.025em;
-}
 
 .imgsecondscreen {
   width: 355px;
@@ -340,12 +342,19 @@ body {
 }
 
 .btn {
-  font-family: "open sans";
-  font-size: 20px;
-  font-weight: 600;
-  color: #F5F9ED;
-  letter-spacing: 0.07em;
-  text-decoration: none
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 650;
+  padding: 10px 20px;
+  background-color: #A584D3;
+  color: #f9f6f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  /* чтобы текст в кнопке не переносился */
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 .arenda
@@ -353,14 +362,14 @@ body {
 /*кнопка позвонить*/
   {
   font-family: "open sans";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 
   letter-spacing: 0.05em;
 
   text-align: center;
   display: inline-block;
-  background-color: #7FA046;
+  background-color: #A584D3;
 
   padding: 15px 81px;
   /* внутренние отступы */
@@ -375,7 +384,7 @@ body {
   cursor: pointer;
   /* курсор в виде руки */
   margin-bottom: 45px;
-  margin-left: 10px;
+  margin-left: 30px;
   white-space: nowrap;
   /* запрещает перенос текста */
   overflow: hidden;
