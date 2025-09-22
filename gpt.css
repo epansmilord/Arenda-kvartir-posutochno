@@ -4,10 +4,12 @@ body {
 }
 
 .apartments {
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 43px 10px 0px 10px;
-  font-family: open sans, sans-serif;
+  max-width: 100%;
+  font-family: open sans,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
 }
 
@@ -35,6 +37,7 @@ body {
   color: #363B2E;
   opacity: 0.99;
   text-align: center;
+  padding-top: 20px;
 }
 
 .apartments p {
@@ -74,9 +77,6 @@ body {
 
 /* настройки контейнера зеленого цвета */
   {
-  padding: 0px 10px 13px 10px;
-  margin-bottom: none;
-  border-radius: 0px;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -84,11 +84,10 @@ body {
 }
 
 .apartment-card img {
-  width: 355px;
+  width: 100%;
   height: 249px;
-  object-fit: none;
-  border-radius: 0px;
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .special-word {
@@ -129,24 +128,22 @@ body {
 }
 
 .photo {
-  width: 355px;
   height: 249px;
-  position: relative;
   overflow: hidden;
-  margin-left: 10px;
+  padding: 10px;
 
 }
 
 .photo img {
-  max-width: none;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+
 
 }
 
 .imgsecondscreen {
-  width: 365px;
+  width: 100%;
   height: 250px;
   position: relative;
   overflow: hidden;
@@ -155,7 +152,7 @@ body {
 }
 
 .imgsecondscreen img {
-  width: 365px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -167,13 +164,11 @@ body {
 /*стиль карточки зеленой*/
   {
   background-color: rgba(197, 205, 166, 0.03);
-
-  width: 375px;
+  width: 100%;
   border-radius: 0px;
   border-bottom: 0.5px solid rgba(85, 107, 47, 0.25);
-
-
   margin-bottom: 25px;
+
 }
 
 
@@ -188,7 +183,7 @@ body {
   letter-spacing: 0.01em;
   color: #32372A;
   row-gap: 10px;
-
+  padding-top: 25px;
 }
 
 .link {
@@ -242,7 +237,7 @@ body {
   font-family: "Open Sans";
   font-size: 19px;
   font-weight: 650;
-  padding: 10px 20px;
+  padding: 16px 20px;
   background-color: #7555a1;
   color: #f9f6f6;
   border: none;
@@ -261,11 +256,11 @@ body {
 
 
 .imgsecondscreen {
-  width: 355px;
-  height: 249px;
+  width: 100%;
+  height: 100%;
   object-fit: none;
-
-
+  display: flex;
+  flex-wrap: nowrap;
 
 }
 
@@ -277,22 +272,31 @@ body {
 
 .apartment-description h2 {
   font-family: "open sans";
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 634;
   letter-spacing: 0.025em;
   margin-bottom: 12px;
+  line-height: 1.5;
 }
 
+.apartment-description h3 {
+  font-family: "open sans";
+  font-size: 18px;
+  font-weight: 634;
+  letter-spacing: 0.025em;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
 
 .apartment-description p {
+  padding: 10px;
   font-family: "open sans";
-  font-size: 13.4px;
-  font-weight: 550;
+  font-size: 18px;
+  font-weight: 500;
   letter-spacing: 0.02em;
   margin-bottom: 28px;
   text-align: left;
-  line-height: 1.8;
-  margin-left: 15px;
+  line-height: 1.6;
 }
 
 
@@ -318,10 +322,12 @@ body {
 
 .features li {
   font-family: "open sans";
-  font-size: 13.4px;
-  font-weight: 550;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  line-height: 1.5;
 }
 
 .rules {
@@ -368,6 +374,7 @@ body {
 
 /*кнопка позвонить*/
   {
+  width: 100%;
   font-family: "open sans";
   font-size: 16px;
   font-weight: 700;
@@ -375,27 +382,33 @@ body {
   letter-spacing: 0.05em;
 
   text-align: center;
-  display: inline-block;
   background-color: #7555a1;
-
-  padding: 15px 81px;
+  padding: 18px 81px;
   /* внутренние отступы */
-
   border: none;
   /* убираем стандартную рамку */
-  border-radius: 5px;
+  border-radius: 2px;
   /* скруглённые углы */
   text-align: center;
   text-decoration: none;
   /* убираем подчёркивание */
   cursor: pointer;
   /* курсор в виде руки */
-
-
   white-space: nowrap;
   /* запрещает перенос текста */
   overflow: hidden;
   /* скрывает лишний текст, если не помещается */
   text-overflow: ellipsis;
   /* добавляет "..." если текст не помещается */
+  margin-left: 10px;
+  margin-right: 10px;
+  position: fixed;
+  /* фиксируем относительно экрана */
+  bottom: 0px;
+  /* отступ от нижнего края */
+  left: 50%;
+  /* ставим по центру */
+  transform: translateX(-50%);
+  /* корректируем, чтобы центрировалась */
+  z-index: 9999;
 }
